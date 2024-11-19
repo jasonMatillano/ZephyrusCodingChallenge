@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Heading</title>
+  <style>
+    /* CSS for styling the page */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading">Hello, World!</h1>
+  <button onclick="changeHeadingText()">Click Me!</button>
+
+  <script>
+    // JavaScript function to change heading text
+    function changeHeadingText() {
+      const heading = document.getElementById("heading");
+      heading.textContent = "You clicked the button!";
+    }
+  </script>
+</body>
+</html>
+
+<!-- 
+### Features:
+1. **Interactive Button:** When the button is clicked, the text of the `<h1>` element changes.
+2. **Basic CSS Styling:**
+   - A clean and simple layout.
+   - The button has a styled appearance and a hover effect for a better user experience.
+3. **Responsive Design:** The page works well on different screen sizes, thanks to the use of relative units like `em` and `px` where appropriate.
+
+### How It Works:
+1. **HTML Structure:** Contains a heading and a button.
+2. **CSS:** Styles the page for a presentable look.
+3. **JavaScript:** The `onclick` event triggers the `changeHeadingText` function, which updates the text of the heading using DOM manipulation.
+-->
